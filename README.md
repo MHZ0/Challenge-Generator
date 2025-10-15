@@ -31,20 +31,25 @@ git clone https://github.com/MHZ0/Challenge-Generator.git
 cd Challenge-Generator
 ```
 2. **Backend Setup**
+```bash
 cd backend
+```
 # create virtual environment and install dependencies
+```bash
 python -m venv venv
 venv\Scripts\activate   # Windows
 pip install -r requirements.txt
-
-# Run the backend serve
+```
+# Run the backend server
+```bash
 uvicorn server.py --reload
-
+```
 3. **Frontend Setup**
+```bash
 cd frontend
 npm install
 npm start
-
+```
 Notes
 Make sure to add your .env file for secrets (API keys, DB credentials, Clerk Secrets), which is ignored by Git.
 
